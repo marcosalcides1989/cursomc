@@ -1,5 +1,6 @@
 package com.marcos.cursomc.services;
 
+import java.util.List;
 import java.util.Optional;
 import java.lang.Integer;
 
@@ -43,5 +44,8 @@ public class CategoriaService {
 		catch ( DataIntegrityViolationException e) {
 			throw new DataIntegrityException("não é possivel excluir uma categoria que possui produtos");
 		}
+	}
+	public List<Categoria> findAll(){
+		return repo.findAll();
 	}
 }
