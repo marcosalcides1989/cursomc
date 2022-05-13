@@ -3,10 +3,6 @@ package com.marcos.cursomc.services;
 import java.util.List;
 import java.util.Optional;
 
-
-
-import java.lang.Integer;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
@@ -18,10 +14,8 @@ import com.marcos.cursomc.domain.Cidade;
 import com.marcos.cursomc.domain.Cliente;
 import com.marcos.cursomc.domain.Endereco;
 import com.marcos.cursomc.domain.enums.TipoCliente;
-import com.marcos.cursomc.domain.Cliente;
 import com.marcos.cursomc.dto.ClienteDTO;
 import com.marcos.cursomc.dto.ClienteNewDTO;
-import com.marcos.cursomc.repositories.CidadeRepository;
 import com.marcos.cursomc.repositories.ClienteRepository;
 import com.marcos.cursomc.repositories.EnderecoRepository;
 import com.marcos.cursomc.services.exceptions.DataIntegrityException;
